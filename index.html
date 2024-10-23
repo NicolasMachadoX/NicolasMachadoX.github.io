@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biografía de Carl Orff</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Biografía</a></li>
+            <li><a href="#">Obras Musicales</a></li>
+            <li><a href="#">Pedagogía Musical</a></li>
+            <li><a href="#">Legado</a></li>
+        </ul>
+    </nav>
+
+    <div class="image-container">
+        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSmNN6u9Pd8kV_iPpDfvOHYiYVuq3_AN0MgTMCKDwEhihEaX9jNC96iBQR7m19_A7giTjQ9nxZayu0LTYmFSY8LIaXSiVkBM_BrBz4Ipw" alt="Carl Orff">
+    </div>
+
+    <div class="grid-container">
+        <div class="grid-item" onclick="toggleExpand(this)">
+            <h3>Biografía ampliada</h3>
+            <p class="hidden-text">Carl Orff creció en una familia de tradición militar, pero su inclinación musical fue evidente desde pequeño. Su formación comenzó en el piano y luego en otros instrumentos como el violonchelo y el órgano. Además de su formación en la Academia de Música de Múnich, Orff también estudió con destacados músicos de la época, como Heinrich Kaminski.
+
+                Orff sirvió brevemente en la Primera Guerra Mundial, lo cual interrumpió temporalmente su carrera musical. Sin embargo, retomó sus estudios y trabajo, y se interesó profundamente por la antigua música griega y la música renacentista, que influyeron en su estilo compositivo.
+                
+                Su participación en el mundo de la música en la Alemania de los años 1930 fue compleja. Aunque "Carmina Burana" fue un gran éxito, Orff fue criticado por su aparente cercanía al régimen nazi, aunque él no fue un colaborador abierto ni partidario del régimen. Tras la guerra, Orff reconstruyó su reputación y su legado como pedagogo se consolidó.
+                </p>
+        </div>
+        <div class="grid-item" onclick="toggleExpand(this)">
+            <h3>Obra Musical ampliada</h3>
+            <p class="hidden-text">Aunque Carmina Burana es la obra más famosa de Orff, su enfoque en la música vocal y escénica se extendió a lo largo de su carrera. El concepto del "trionfo" en su música, una serie de obras que incluyen Carmina Burana, Catulli Carmina y Trionfo di Afrodite, refleja su interés en el teatro y el ritual. Las obras de Orff a menudo utilizan textos latinos o antiguos, reflejando su fascinación por el drama antiguo y el poder evocador de la poesía medieval. Su música está impregnada de una estructura rítmica fuerte, simplificación armónica, y repetición insistente, que buscaba crear un impacto emocional inmediato en el oyente. Además de estas obras escénicas, compuso varias óperas y trabajos que exploran mitos y leyendas, como Der Mond (La Luna) y Die Kluge (La Sabia), que se basan en cuentos populares bávaros. Orff también adaptó tragedias griegas como Antígona y Prometeo para la escena moderna, utilizando técnicas musicales experimentales.</p>
+        </div>
+        <div class="grid-item" onclick="toggleExpand(this)">
+            <h3>Pedagogía Musical ampliada</h3>
+            <p class="hidden-text">El Orff Schulwerk no es simplemente un método educativo; es un enfoque completo hacia el aprendizaje musical. Se centra en la participación activa de los estudiantes a través del juego y la improvisación. Los niños no solo tocan instrumentos, sino que también cantan, bailan y utilizan sus cuerpos como un medio para aprender y expresar música. El método promueve una forma de aprendizaje colaborativa, en la que los estudiantes trabajan juntos en grupos para crear música, y destaca la importancia de la improvisación como una manera de fomentar la creatividad. Gunild Keetman, la colaboradora clave de Orff, fue responsable de muchos de los materiales y ejercicios prácticos utilizados en el Schulwerk. Una parte importante del método es el uso de instrumentos especialmente diseñados para ser accesibles para los niños, como los xilófonos y metalófonos Orff, que permiten a los estudiantes experimentar con melodías y ritmos sin la complejidad de instrumentos más tradicionales. También se utilizan tambores, claves, y otros instrumentos de percusión de fácil manejo. El enfoque Orff ha influenciado no solo la educación musical, sino también áreas como la terapia musical y la educación especial, donde se usa para fomentar la expresión individual y el desarrollo psicomotor.</p>
+        </div>
+        <div class="grid-item" onclick="toggleExpand(this)">
+            <h3>Legado ampliado</h3>
+            <p class="hidden-text">El legado de Carl Orff es inmenso. Su método pedagógico ha sido adoptado en muchos países alrededor del mundo, y su influencia en la enseñanza musical sigue vigente en la actualidad. El Orff-Institut, fundado en 1961 en Salzburgo, Austria, sigue siendo un centro líder en la formación de educadores en el método Orff, y su trabajo se extiende a través de una red global de educadores y profesionales. Además de su impacto en la educación musical, Orff dejó una huella indeleble en la música escénica y coral. Carmina Burana sigue siendo una de las piezas más interpretadas en todo el mundo, y es usada tanto en conciertos como en la cultura popular. Su estilo rítmico y dramático ha sido fuente de inspiración para compositores posteriores. La Fundación Carl Orff, establecida tras su muerte, se encarga de preservar su obra y de apoyar la difusión de su método pedagógico. También organiza eventos, conciertos y proyectos relacionados con su legado.</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleExpand(element) {
+            const text = element.querySelector('.hidden-text');
+            if (text.style.maxHeight) {
+                text.style.maxHeight = null;
+            } else {
+                text.style.maxHeight = text.scrollHeight + "px";
+            }
+        }
+    </script>
+</body>
+</html>

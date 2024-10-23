@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    height: 100vh; /* Altura de la pantalla completa */
+    background-color: #fff8e1; /* Color de fondo suave en tonos crema */
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    background-color: #ff8c00; /* Color naranja para el navbar */
+    color: white;
+    padding: 15px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px; /* Espaciado alrededor del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo semi-transparente en hover */
+}
+
+.image-container {
+    text-align: center;
+    margin: 20px 0;
+    flex: 1; /* Ocupa espacio disponible */
+}
+
+.image-container img {
+    max-width: 70%; /* Imagen un poco más pequeña */
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados para la imagen */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra para la imagen */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /* Espaciado entre los elementos del grid */
+    padding: 20px;
+    flex: 1; /* Ocupa espacio disponible */
+}
+
+.grid-item {
+    background-color: #ffa500; /* Color naranja brillante */
+    border: 1px solid #e68a00; /* Color de borde más oscuro */
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra para los elementos del grid */
+    transition: transform 0.3s, box-shadow 0.3s; /* Animaciones suaves para el hover */
+    cursor: pointer; /* Cursor de mano para indicar que es interactivo */
+    overflow: hidden; /* Ocultar el texto al principio */
+}
+
+.grid-item:hover {
+    transform: translateY(-5px); /* Elevación al pasar el mouse */
+}
+
+/* Nueva clase para el último grid item */
+.long-item {
+    grid-column: span 3; /* Ocupa las 3 columnas */
+    height: auto; /* Ajusta la altura automáticamente */
+}
+
+/* Estilos responsive */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas más pequeñas */
+    }
+
+    .grid-item {
+        padding: 15px; /* Menos padding en elementos del grid */
+    }
+
+    .image-container img {
+        max-width: 90%; /* Imagen más grande en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column; /* Navbar en columna */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Espaciado vertical */
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr; /* 1 columna en pantallas muy pequeñas */
+    }
+
+    .grid-item {
+        padding: 10px; /* Menos padding en elementos del grid */
+    }
+}
