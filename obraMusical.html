@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biografía de Carl Orff</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="biografia.html">Biografía</a></li>
+            <li><a href="obraMusical.html">Obras Musicales</a></li>
+        </ul>
+    </nav>
+
+    <div class="video-title">
+        <h2>Videos Destacados de Carl Orff</h2>
+    </div>
+    <div class="grid-container">
+<!--         <div class="grid-item">
+            <iframe width="100%" height="400" src="https://www.youtube.com/watch?v=Ia6ZBd4ehmU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>Título del Video 1</p>
+        </div> -->
+       <!--  <div class="grid-item">
+            <iframe width="100%" height="400" src="https://www.youtube.com/watch?v=mTiHe6y1cJU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>Der Monde </p>
+        </div> -->
+        <div class="grid-item-video">
+            <iframe width="100%" height="400" src="https://www.youtube.com/embed/RRQh7wvgKGQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>Historia y curiosidades de "Carmina Burana"</p>
+        </div>
+        <div class="grid-item-video">
+            <iframe width="100%" height="400" src="https://www.youtube.com/embed/5rtShEqpoRs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>Catulli Carmina "Praelusio"</p>
+        </div>
+        <div class="grid-item-video">
+            <iframe width="100%" height="400" src="https://www.youtube.com/embed/P_ud9_MMvvc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>Michael Barranco Senior Recital 6. Gassenhauer</p>
+        </div>
+    </div>
+    
+    <script>
+        function toggleExpand(element) {
+            const text = element.querySelector('.hidden-text');
+            if (text.style.maxHeight) {
+                text.style.maxHeight = null;
+            } else {
+                text.style.maxHeight = text.scrollHeight + "px";
+            }
+        }
+    </script>
+</body>
+</html>
